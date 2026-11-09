@@ -1,0 +1,42 @@
+:root { font-family: system-ui, sans-serif; color: #1f2933; background: #f4f6f8; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.contenedor { max-width: 720px; margin: 0 auto; padding: 24px 16px; }
+
+.barra { display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 24px; background: #1c7a5b; color: white; }
+.barra h1 { margin: 0; font-size: 1.2rem; }
+.barra nav { display: flex; gap: 16px; align-items: center; }
+.barra a { color: white; text-decoration: none; opacity: 0.8; }
+.barra a.active { opacity: 1; font-weight: 700; border-bottom: 2px solid white; }
+
+.lista { list-style: none; padding: 0; display: grid; gap: 10px; }
+.tarea { display: flex; align-items: center; gap: 12px; padding: 12px 14px;
+  background: white; border: 1px solid #dde3e8; border-radius: 10px; }
+.tarea__titulo { flex: 1; }
+.tarea--completada .tarea__titulo { text-decoration: line-through; color: #7b8794; }
+
+.insignia { font-size: 0.75rem; padding: 2px 8px; border-radius: 999px; }
+.insignia--alta { background: #fde2dd; color: #a8472a; }
+.insignia--media { background: #fdf0cf; color: #8a6116; }
+.insignia--baja { background: #dff3e8; color: #135c44; }
+
+.formulario { display: grid; gap: 14px; background: white; padding: 18px;
+  border: 1px solid #dde3e8; border-radius: 10px; }
+.campo { display: grid; gap: 4px; }
+.campo input, .campo textarea, .campo select { padding: 8px 10px; font: inherit;
+  border: 1px solid #c4ccd4; border-radius: 6px; }
+
+.boton { padding: 8px 14px; font: inherit; border: 0; border-radius: 6px;
+  background: #1c7a5b; color: white; cursor: pointer; }
+.boton:disabled { opacity: 0.6; cursor: not-allowed; }
+.boton--secundario { background: #e4e9ee; color: #1f2933; }
+.boton--peligro { background: #a8472a; }
+
+.filtros { display: flex; gap: 10px; margin: 16px 0; }
+.filtros input { flex: 1; padding: 8px 10px; font: inherit;
+  border: 1px solid #c4ccd4; border-radius: 6px; }
+.resumen { color: #52606d; margin-bottom: 12px; }
+.error { color: #a8472a; background: #fde2dd; padding: 10px 12px; border-radius: 6px; }
+.vacio { color: #7b8794; text-align: center; padding: 24px; }
+.tarjeta { background: white; border: 1px solid #dde3e8; border-radius: 10px; padding: 16px; }
